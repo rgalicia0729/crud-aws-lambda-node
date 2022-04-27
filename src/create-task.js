@@ -10,7 +10,7 @@ const createTask = async (event) => {
   const createdAt = new Date();
   const id = v4();
 
-  const newTask = {
+  const task = {
     id,
     title,
     description,
@@ -19,16 +19,13 @@ const createTask = async (event) => {
 
   await dynamodb.put({
     TableName: 'TaskTable',
-    Item: newTask
+    Item: task
   }).promise();
 
   return {
     status: 201,
-    // headers: {
-    //   'Content-Type': 'application/json'
-    // },
     body: {
-      newTask
+      task
     }
   }
 
