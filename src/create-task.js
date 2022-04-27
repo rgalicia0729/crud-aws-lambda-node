@@ -23,11 +23,13 @@ const createTask = async (event) => {
   }).promise();
 
   return {
-    statusCode: 201,
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(newTask)
+    status: 201,
+    // headers: {
+    //   'Content-Type': 'application/json'
+    // },
+    body: {
+      newTask
+    }
   }
 
 };

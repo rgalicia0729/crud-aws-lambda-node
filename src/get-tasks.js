@@ -11,9 +11,6 @@ const getTasks = async (event) => {
 
   return {
     status: 200,
-    // headers: {
-    //   'Content-Type': 'application/json'
-    // },
     body: {
       tasks
     }
