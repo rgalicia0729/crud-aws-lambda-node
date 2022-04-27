@@ -22,7 +22,6 @@ const createTask = async (event) => {
     Item: newTask
   }).promise();
 
-
   return {
     statusCode: 201,
     headers: {

@@ -9,12 +9,14 @@ const getTasks = async (event) => {
 
   const items = result.Items;
 
+  console.log(items);
+
   return {
     statusCode: 200,
     headers: {
       'Content-Type': 'application/json'
     },
-    body: items
+    body: JSON.stringify(items)
   }
 }
 
