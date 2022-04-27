@@ -7,7 +7,7 @@ const getTasks = async (event) => {
     TableName: 'TaskTable'
   }).promise();
 
-  const items = result.items
+  const items = result.Items
 
   return {
     statusCode: 200,
