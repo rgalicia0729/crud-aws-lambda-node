@@ -1,0 +1,11 @@
+{
+  "name": "aws-lambda-crud-node",
+  "version": "1.0.0",
+  "description": "AWS Lambda, ejemplo de como crear un crud",
+  "author": "@rgalicia0729",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.1122.0",
+    "uuid": "^8.3.2"
+  }
+}
