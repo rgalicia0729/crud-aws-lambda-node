@@ -14,7 +14,7 @@ const createTask = async (event) => {
     id,
     title,
     description,
-    createdAt
+    createdAt: createdAt.toISOString()
   }
 
   await dynamodb.put({
