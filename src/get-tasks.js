@@ -7,12 +7,12 @@ const getTasks = async (event) => {
     TableName: 'TaskTable'
   }).promise();
 
-  const items = result.Items
+  const items = result.Items;
 
   return {
     statusCode: 200,
     headers: {
-      'content-type': 'application/json'
+      'Content-Type': 'application/json'
     },
     body: items
   }
