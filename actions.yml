@@ -3,11 +3,12 @@ name: Deploy Dev
 on:
   push:
     branches:
+      - main
       - develop
 
 jobs:
   deploy:
-    name: Deploy to develop
+    name: Deploy to AWS lambda
     runs-on: ubuntu-latest
     strategy:
       matrix:
